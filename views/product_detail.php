@@ -7,7 +7,7 @@
 <body>
 
  <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb_area bg-img" style="background-image: url(/sheekstore/e_commerce/img/bg-img/breadcumb.jpg);">
+    <div class="breadcumb_area bg-img" style="background-image: url(/SheekStore/img/bg-img/breadcumb.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
@@ -53,7 +53,7 @@
             <p class="product-desc">'.$product_detail->description().'</p>
 
             <!-- Form -->
-            <form class="cart-form clearfix" action="/sheekstore/e_commerce/index.php/cart" method="post">
+            <form class="cart-form clearfix" action="/SheekStore/index.php/cart" method="post">
                 <!-- Select Box -->
                 <div class="select-box d-flex mt-50 mb-30">
                     <select name="select" id="productSize" class="mr-5">

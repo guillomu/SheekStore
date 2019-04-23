@@ -2,14 +2,14 @@
 /* :: 1.0 Import Web Fonts */
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Ubuntu:300,400,500,700");
 /* :: 2.0 Import All CSS */
-@import url(/sheekstore/e_commerce/css/bootstrap.min.css);
-@import url(/sheekstore/e_commerce/css/classy-nav.min.css);
-@import url(/sheekstore/e_commerce/css/owl.carousel.css);
-@import url(/sheekstore/e_commerce/css/animate.css);
-@import url(/sheekstore/e_commerce/css/magnific-popup.css);
-@import url(/sheekstore/e_commerce/css/jquery-ui.min.css);
-@import url(/sheekstore/e_commerce/css/nice-select.css);
-@import url(/sheekstore/e_commerce/css/font-awesome.min.css);
+@import url(/SheekStore/css/bootstrap.min.css);
+@import url(/SheekStore/css/classy-nav.min.css);
+@import url(/SheekStore/css/owl.carousel.css);
+@import url(/SheekStore/css/animate.css);
+@import url(/SheekStore/css/magnific-popup.css);
+@import url(/SheekStore/css/jquery-ui.min.css);
+@import url(/SheekStore/css/nice-select.css);
+@import url(/SheekStore/css/font-awesome.min.css);
 /* :: 3.0 Common/Base CSS */
 * {
   margin: 0;

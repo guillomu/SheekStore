@@ -2,7 +2,7 @@
 // USERS ADMINISTRATION VIEWuser
 
 if($action == 'showusers' || $action == 'deleteuser'){
-  echo '<a href="/sheekstore/e_commerce/index.php/admin/adduser/"><button class="btn btn-lg btn-primary btn-block" name="addclient">Ajouter un client</button></a><br /><br />';
+  echo '<a href="/SheekStore/index.php/admin/adduser/"><button class="btn btn-lg btn-primary btn-block" name="addclient">Ajouter un client</button></a><br /><br />';
 
   if(isset($result)){ echo $result; } // Affichage du message de confirmation / erreur
 
@@ -25,14 +25,14 @@ if($action == 'showusers' || $action == 'deleteuser'){
   foreach($ClientsListView as $client){
     echo '<tr>
     <td>'.$client['id'].'</td>
-    <td><a href="/sheekstore/e_commerce/index.php/admin/edituser/'.$client['id'].'">'.$client['nom_client'].'</a></td>
+    <td><a href="/SheekStore/index.php/admin/edituser/'.$client['id'].'">'.$client['nom_client'].'</a></td>
     <td>'.$client['prenom'].'</td>
     <td>'.$client['nom'].'</td>
     <td>'.$client['email'].'</td>
     <td>'.$client['admin'].'</td>
     <form method="post">
-    <td><input type="image" formaction="/sheekstore/e_commerce/index.php/admin/edituser/'.$client['id'].'" src="/sheekstore/e_commerce/img/edit.png" alt="Icone d\'édition" class="icon" /></td>
-    <td><input type="image" formaction="/sheekstore/e_commerce/index.php/admin/deleteuser/'.$client['id'].'" src="/sheekstore/e_commerce/img/delete.png" alt="Icone de suppression" class="icon" /></td>
+    <td><input type="image" formaction="/SheekStore/index.php/admin/edituser/'.$client['id'].'" src="/SheekStore/img/edit.png" alt="Icone d\'édition" class="icon" /></td>
+    <td><input type="image" formaction="/SheekStore/index.php/admin/deleteuser/'.$client['id'].'" src="/SheekStore/img/delete.png" alt="Icone de suppression" class="icon" /></td>
     </form>';
   }
 
@@ -40,7 +40,7 @@ if($action == 'showusers' || $action == 'deleteuser'){
   </table>';
 }
 else if($action =='adduser' || $action =='edituser'){
-  echo '<form class="form-signin" action="/sheekstore/e_commerce/index.php/admin/showusers" method="post">
+  echo '<form class="form-signin" action="/SheekStore/index.php/admin/showusers" method="post">
   <h1 class="h3 mb-3 font-weight-normal">'.$verb.' un utilisateur</h1>
   <input type="hidden" name="id" value="'.$id.'">
   <label for="inputName" class="sr-only">Nom d\'utilisateur</label>

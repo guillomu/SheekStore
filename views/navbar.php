@@ -7,7 +7,7 @@
     <!-- Classy Menu -->
     <nav class="classy-navbar" id="essenceNav">
       <!-- Logo -->
-      <a class="nav-brand" href="/sheekstore/e_commerce/"><img src="/sheekstore/e_commerce/img/sheeks.png" alt=""></a>
+      <a class="nav-brand" href="/SheekStore/"><img src="/SheekStore/img/sheeks.png" alt=""></a>
       <!-- Navbar Toggler -->
       <div class="classy-navbar-toggler">
         <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -24,21 +24,21 @@
             <li><a href="#">Shop</a>
               <div class="dropdown">
                 <ul class="single-mega cn-col-4">
-                  <a href="/sheekstore/e_commerce/index.php/home/">Tous les produits</a>
+                  <a href="/SheekStore/index.php/home/">Tous les produits</a>
                     <?php
 
                         if(isset($categoriesListView)){
                           foreach($categoriesListView as $category){
                                   echo '<!-- Single Item -->
                                         <li data-toggle="collapse" data-target="#clothing">
-                                        <a href="/sheekstore/e_commerce/index.php/home/getbycategory/'.$category['id'].'">'.$category['nom_categorie'].'</a>
+                                        <a href="/SheekStore/index.php/home/getbycategory/'.$category['id'].'">'.$category['nom_categorie'].'</a>
                                         </li>';
                                       }
                                     }
                                     ?>
                 </ul>
                 <div class="single-mega cn-col-4">
-                  <img src="/sheekstore/e_commerce/img/bg-img/sheeks.png" alt="">
+                  <img src="/SheekStore/img/bg-img/sheeks.png" alt="">
                 </div>
               </div>
             </li>
@@ -78,7 +78,7 @@
             <div class="modal-body">
 
               <div class="form-group">
-                <form id="newuser" action="/sheekstore/e_commerce/index.php/signup" method="post">
+                <form id="newuser" action="/SheekStore/index.php/signup" method="post">
 
 
                   <div>Login   :</div><input type="text" name="login" required><br/>
@@ -115,7 +115,7 @@
             <div class="modal-body">
 
               <div class="form-group">
-                <form id="userconnection" action="/sheekstore/e_commerce/index.php/signin" method="post">
+                <form id="userconnection" action="/SheekStore/index.php/signin" method="post">
                   <div>Email  :</div><input type="email" name="email" required><br>
                   <div>Password:</div><input type="password" name="password" required><br>
                   <br><input type="submit" name="signin" value="Se connecter">
@@ -133,15 +133,15 @@
 
       <div class="user-login-info">
         <div class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="/sheekstore/e_commerce/img/core-img/user.svg" alt=""></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="/SheekStore/img/core-img/user.svg" alt=""></a>
           <div class="dropdown-menu">
             <?php
             if(isset($_SESSION['email'])){
-              echo '  <a href="/sheekstore/e_commerce/index.php/profile">'.$_SESSION['login'].'</a>
-              <a href="/sheekstore/e_commerce/index.php/logout">LogOut</a>';
+              echo '  <a href="/SheekStore/index.php/profile">'.$_SESSION['login'].'</a>
+              <a href="/SheekStore/index.php/logout">LogOut</a>';
 
               if($_SESSION['admin'] == 'yes'){
-                echo '<a href="/sheekstore/e_commerce/index.php/admin">Administration</a>';
+                echo '<a href="/SheekStore/index.php/admin">Administration</a>';
 
               }
 
@@ -164,12 +164,12 @@
         echo '
         <!-- Favourite Area -->
         <div class="favourite-area">
-        <a href="#"><img src="/sheekstore/e_commerce/img/core-img/heart.svg" alt=""></a>
+        <a href="#"><img src="/SheekStore/img/core-img/heart.svg" alt=""></a>
         </div>
 
         <!-- Cart Area -->
         <div class="cart-area">
-        <a href="#" id="essenceCartBtn"><img src="/sheekstore/e_commerce/img/core-img/bag.svg" alt="">
+        <a href="#" id="essenceCartBtn"><img src="/SheekStore/img/core-img/bag.svg" alt="">
         <span>';
 
         if(isset($_SESSION["products"])){
@@ -195,7 +195,7 @@
 
     <!-- Cart Button -->
     <div class="cart-button">
-      <a href="#" id="rightSideCart"><img src="/sheekstore/e_commerce/img/core-img/bag.svg" alt="">
+      <a href="#" id="rightSideCart"><img src="/SheekStore/img/core-img/bag.svg" alt="">
         <span>
           <?php
           // Affichage du nombre d'article dans le panier
@@ -218,7 +218,7 @@
 	        foreach ($_SESSION["products"] as $product){
 	          echo '<!-- Single Cart Item -->
 	          <div class="single-cart-item">
-              <form class="form-product" action="/sheekstore/e_commerce/index.php/cart" method="post">
+              <form class="form-product" action="/SheekStore/index.php/cart" method="post">
 	            <a href="#" class="product-image">
 	              <img src="'.$product['product_img'].'" class="cart-thumb" alt="product image">
 	              <!-- Cart Item Desc -->
@@ -245,10 +245,10 @@
             <li><span>total:</span> <span>'.$_SESSION["total"].'€</span></li>
           </ul>
           <div class="checkout-btn mt-100">
-            <a href="/sheekstore/e_commerce/index.php/checkout" class="btn essence-btn">check out</a>
+            <a href="/SheekStore/index.php/checkout" class="btn essence-btn">check out</a>
           </div>
           <div class="checkout-btn mt-30">
-            <a href="/sheekstore/e_commerce/index.php/cart/emptycart" class="btn essence-btn">empty cart</a>
+            <a href="/SheekStore/index.php/cart/emptycart" class="btn essence-btn">empty cart</a>
           </div>
         </div>';
 
@@ -260,7 +260,7 @@
             <ul class="summary-table">
             <li><span>Le panier est vide</span></li>
           </ul>
-          <img src="/sheekstore/e_commerce/img/cart_empty.gif" />
+          <img src="/SheekStore/img/cart_empty.gif" />
         </div>';
     }
     ?>

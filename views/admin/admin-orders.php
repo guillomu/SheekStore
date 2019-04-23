@@ -2,7 +2,7 @@
 // ORDERS ADMINISTRATION VIEW
 
 if($action == 'showorders' || $action == 'deleteorder'){
-  echo '<a href="/sheekstore/e_commerce/index.php/admin/addorder/"><button class="btn btn-lg btn-primary btn-block" name="addorder">Ajouter une commande</button></a><br /><br />';
+  echo '<a href="/SheekStore/index.php/admin/addorder/"><button class="btn btn-lg btn-primary btn-block" name="addorder">Ajouter une commande</button></a><br /><br />';
 
   if(isset($result)){ echo $result; } // Affichage du message de confirmation / erreur
 
@@ -25,14 +25,14 @@ if($action == 'showorders' || $action == 'deleteorder'){
   foreach($adminList as $order){
     echo '<tr>
     <td>'.$order['id'].'</td>
-    <td><a href="/sheekstore/e_commerce/index.php/admin/editorder/'.$order['id'].'">'.$order['date_commande'].'</a></td>
+    <td><a href="/SheekStore/index.php/admin/editorder/'.$order['id'].'">'.$order['date_commande'].'</a></td>
     <td>'.$order['nom_client'].'</td>
     <td>'.$orderAdmin->nbArticles($order['id']).'</td>
     <td>'.$orderAdmin->totalPrice($order['id']).'€</td>
     <td>En cours de traitement</td>
     <form method="post">
-    <td><input type="image" formaction="/sheekstore/e_commerce/index.php/admin/editorder/'.$order['id'].'" src="/sheekstore/e_commerce/img/edit.png" alt="Icone d\'édition" class="icon" /></td>
-    <td><input type="image" formaction="/sheekstore/e_commerce/index.php/admin/deleteorder/'.$order['id'].'" src="/sheekstore/e_commerce/img/delete.png" alt="Icone de suppression" class="icon" /></td>
+    <td><input type="image" formaction="/SheekStore/index.php/admin/editorder/'.$order['id'].'" src="/SheekStore/img/edit.png" alt="Icone d\'édition" class="icon" /></td>
+    <td><input type="image" formaction="/SheekStore/index.php/admin/deleteorder/'.$order['id'].'" src="/SheekStore/img/delete.png" alt="Icone de suppression" class="icon" /></td>
     </form>';
   }
 
@@ -40,7 +40,7 @@ if($action == 'showorders' || $action == 'deleteorder'){
   </table>';
 }
 else if($action =='addorder' || $action =='editorder'){
-  echo '<form class="form-signin" action="/sheekstore/e_commerce/index.php/admin/showorders" method="post">
+  echo '<form class="form-signin" action="/SheekStore/index.php/admin/showorders" method="post">
   <h1 class="h3 mb-3 font-weight-normal">'.$verb.' une commande</h1>
   <input type="hidden" name="id" value="'.$id.'">
   <label for="inputName" class="sr-only">Date de la commande</label>

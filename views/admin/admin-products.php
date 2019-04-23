@@ -2,7 +2,7 @@
 // PRODUCTS ADMINISTRATION VIEW
 
 if($action == 'showproducts' || $action == 'deleteproduct'){
-  echo '<a href="/sheekstore/e_commerce/index.php/admin/addproduct/"><button class="btn btn-lg btn-primary btn-block" name="addproduct">Ajouter un Produit</button></a><br /><br />';
+  echo '<a href="/SheekStore/index.php/admin/addproduct/"><button class="btn btn-lg btn-primary btn-block" name="addproduct">Ajouter un Produit</button></a><br /><br />';
 
   if(isset($result)){ echo $result; } // Affichage du message de confirmation / erreur
 
@@ -25,14 +25,14 @@ if($action == 'showproducts' || $action == 'deleteproduct'){
   foreach($adminList as $product){
     echo '<tr>
     <td>'.$product['id'].'</td>
-    <td><a href="/sheekstore/e_commerce/index.php/admin/editproduct/'.$product['id'].'">'.$product['libelle'].'</a></td>
+    <td><a href="/SheekStore/index.php/admin/editproduct/'.$product['id'].'">'.$product['libelle'].'</a></td>
     <td>'.$product['marque'].'</td>
     <td>'.$product['nom_categorie'].'</td>
     <td>'.$product['stock'].'</td>
     <td>'.$product['prix'].'€</td>
     <form method="post">
-    <td><input type="image" formaction="/sheekstore/e_commerce/index.php/admin/editproduct/'.$product['id'].'" src="/sheekstore/e_commerce/img/edit.png" alt="Icone d\'édition" class="icon" /></td>
-    <td><input type="image" formaction="/sheekstore/e_commerce/index.php/admin/deleteproduct/'.$product['id'].'" src="/sheekstore/e_commerce/img/delete.png" alt="Icone de suppression" class="icon" /></td>
+    <td><input type="image" formaction="/SheekStore/index.php/admin/editproduct/'.$product['id'].'" src="/SheekStore/img/edit.png" alt="Icone d\'édition" class="icon" /></td>
+    <td><input type="image" formaction="/SheekStore/index.php/admin/deleteproduct/'.$product['id'].'" src="/SheekStore/img/delete.png" alt="Icone de suppression" class="icon" /></td>
     </form>';
   }
 
@@ -40,7 +40,7 @@ if($action == 'showproducts' || $action == 'deleteproduct'){
   </table>';
 }
 else if($action =='addproduct' || $action =='editproduct'){
-  echo '<form id="form-product" class="form-signin" action="/sheekstore/e_commerce/index.php/admin/showproducts" method="post" enctype="multipart/form-data">
+  echo '<form id="form-product" class="form-signin" action="/SheekStore/index.php/admin/showproducts" method="post" enctype="multipart/form-data">
   <h1 class="h3 mb-3 font-weight-normal">'.$verb.' un produit</h1>
   <input type="hidden" name="id" value="'.$id.'">
   <label for="inputName" class="sr-only">Nom du produit</label>

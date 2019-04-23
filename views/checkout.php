@@ -5,7 +5,7 @@ if(!isset($result)){
   ?>
 
   <!-- ##### Breadcumb Area Start ##### -->
-  <div class="breadcumb_area bg-img" style="background-image: url(/sheekstore/e_commerce/img/bg-img/breadcumb.jpg);">
+  <div class="breadcumb_area bg-img" style="background-image: url(/SheekStore/img/bg-img/breadcumb.jpg);">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
@@ -30,7 +30,7 @@ if(!isset($result)){
               <h5>Adresse de Facturation</h5>
             </div>
 
-            <form action="/sheekstore/e_commerce/index.php/checkout" method="post">
+            <form action="/SheekStore/index.php/checkout" method="post">
               <div class="row">
                 <div class="col-md-6 mb-3">
                   <label for="first_name">Prénom <span>*</span></label>

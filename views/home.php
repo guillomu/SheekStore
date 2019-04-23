@@ -4,7 +4,7 @@
 <body>
 
  <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb_area bg-img" style="background-image: url(/sheekstore/e_commerce/img/bg-img/breadcumb.jpg);">
+    <div class="breadcumb_area bg-img" style="background-image: url(/SheekStore/img/bg-img/breadcumb.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
@@ -33,14 +33,14 @@
                             <div class="catagories-menu">
                                 <ul id="menu-content2" class="menu-content collapse show">
                                   <li data-toggle="collapse" data-target="#clothing">
-                                      <a href="/sheekstore/e_commerce/index.php/home/">Tous les produits</a>
+                                      <a href="/SheekStore/index.php/home/">Tous les produits</a>
                                   </li>
                                     <?php
                                       if(isset($categoriesListView)){
                                         foreach($categoriesListView as $category){
                                         echo '<!-- Single Item -->
                                         <li data-toggle="collapse" data-target="#clothing">
-                                            <a href="/sheekstore/e_commerce/index.php/home/getbycategory/'.$category['id'].'">'.$category['nom_categorie'].'</a>
+                                            <a href="/SheekStore/index.php/home/getbycategory/'.$category['id'].'">'.$category['nom_categorie'].'</a>
                                         </li>';
                                       }
                                     }
@@ -129,13 +129,13 @@
                                         <div class="hover-content">
                                             <!-- Add to Cart -->
                                                 <div class="add-to-cart-btn">
-                                                    <form class="form-product" action="/sheekstore/e_commerce/index.php/cart" method="post">
+                                                    <form class="form-product" action="/SheekStore/index.php/cart" method="post">
 											         <input name="id_product" type="hidden" value="'.$product['id'].'">
                                           		    <button type="submit" class="btn essence-btn">Ajouter au panier</button>
                                                 </div>
                                                     </form>
                                                <div class="add-to-cart-btn">
-                                                    <form class="form-product" action="/sheekstore/e_commerce/index.php/product_detail" method="get">
+                                                    <form class="form-product" action="/SheekStore/index.php/product_detail" method="get">
                                                      <input name="product" type="hidden" value="'.$product['id'].'">
                                                     <button type="submit" class="btn essence-btn">Details</button>
                                                 </div>
