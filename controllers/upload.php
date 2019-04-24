@@ -38,9 +38,9 @@ function uploadImg($imgs){
         if (file_exists($imgs[$i])){
           $return = false;
         } else {
-          $temp = preg_replace('/ /', '',explode("/e_commerce/",$imgs[$i]));
+          $temp = preg_replace('/ /', '',explode("/SheekStore/",$imgs[$i]));
           $imgName = end($temp);
-
+          
           $file = $_FILES['img'.$i]['tmp_name'];
           $source_properties = getimagesize($file);
           $image_type = $source_properties[2];
