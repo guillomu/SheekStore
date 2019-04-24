@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SheekStore</title>
-	<link rel="shortcut icon" href="/SheekStore/img/logo.png">
+	<link rel="shortcut icon" href="/SheekStore/img/logo.jpg">
 	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
 	<link rel="stylesheet" type="text/css" href="/SheekStore/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/SheekStore/css/core-style.css">
