@@ -52,7 +52,7 @@
                         <!-- ##### Single Widget ##### -->
                         <div class="widget color mb-50">
                             <!-- Widget Title 2 -->
-                            <p class="widget-title2 mb-30">Color</p>
+                            <p class="widget-title2 mb-30">Couleur</p>
                             <div class="widget-desc">
                                 <ul class="d-flex">
                                     <li><a href="#" class="color1"></a></li>
@@ -85,13 +85,13 @@
                                     </div>
                                     <!-- Sorting -->
                                     <div class="product-sorting d-flex">
-                                        <p>Sort by:</p>
+                                        <p>Trier par:</p>
                                         <form action="#" method="get">
                                             <select name="select" id="sortByselect">
-                                                <option value="value">Highest Rated</option>
-                                                <option value="value">Newest</option>
-                                                <option value="value">Price: $$ - $</option>
-                                                <option value="value">Price: $ - $$</option>
+                                                <option value="value">Mieux Notés</option>
+                                                <option value="value">Plus Récents</option>
+                                                <option value="value">Prix: $$ - $</option>
+                                                <option value="value">Prix: $ - $$</option>
                                             </select>
                                             <input type="submit" class="d-none" value="">
                                         </form>
